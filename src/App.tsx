@@ -15,7 +15,7 @@ export const App: React.FC = () => {
       >
         -
       </Button>
-      <Text>現在{count}戦目</Text>
+      <Text>現在{count}レース目</Text>
       <Button
         variant="contained"
         color="primary"
