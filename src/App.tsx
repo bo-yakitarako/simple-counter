@@ -21,6 +21,7 @@ export const App: React.FC = () => {
 
 const Flex = styled(Box)`
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 8px;
 `;
