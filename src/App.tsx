@@ -7,7 +7,7 @@ export const App: React.FC = () => {
   return (
     <Flex draggable>
       <Button
-        variant="outlined"
+        variant="contained"
         color="primary"
         onClick={() => {
           setCount(count - 1);
@@ -17,7 +17,7 @@ export const App: React.FC = () => {
       </Button>
       <Text>現在{count}戦目</Text>
       <Button
-        variant="outlined"
+        variant="contained"
         color="primary"
         onClick={() => {
           setCount(count + 1);
@@ -37,4 +37,5 @@ const Flex = styled(Box)`
 
 const Text = styled(Typography)`
   font-size: 4rem;
+  font-weight: bold;
 `;
