@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useState } from 'react';
 import styled from '@emotion/styled';
 
@@ -6,25 +6,15 @@ export const App: React.FC = () => {
   const [count, setCount] = useState(1);
   return (
     <Flex draggable>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={() => {
+      <Text
+        onClick={() => setCount(count + 1)}
+        onContextMenu={(e) => {
+          e.preventDefault();
           setCount(count - 1);
         }}
       >
-        -
-      </Button>
-      <Text>現在{count}レース目</Text>
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        +
-      </Button>
+        現在{count}レース目
+      </Text>
     </Flex>
   );
 };
