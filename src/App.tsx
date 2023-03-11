@@ -13,7 +13,7 @@ export const App: React.FC = () => {
           setCount(count - 1);
         }}
       >
-        現在{count}レース目
+        今のコウモリ討伐数: {count}
       </Text>
     </Flex>
   );
